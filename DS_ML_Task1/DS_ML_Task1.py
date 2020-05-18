@@ -1,12 +1,13 @@
 import pandas as pd
 from matplotlib import pyplot as plt
 import numpy as np
+import seaborn as sns
 
 
 #Step-1
 df_csv = pd.read_csv("student-math.csv")
 #Given csv file is also uploaded in the repo along with this task solution file named as "student-math.csv"
-#The csv file provided to me, had all the data in one column with each data separated by ";". \
+#The csv file provided to me, had all the data in one column with each data separated by ";". 
 
 #The code for modifying the data so as to form a dataframe
 col = df_csv.columns.tolist()
@@ -14,17 +15,18 @@ cols = col[0].split(";")
 df_csv.columns=["data"]
 df= df_csv.data.str.split(";",expand = True)
 df.columns = cols
-#len(df.columns.tolist())
+#print(df)
 
 
 #Step-2
 df['G1'] = df['G1'].map(lambda x: x.strip('"'))
 df['G2'] = df['G2'].map(lambda x: x.strip('"'))
 df['final_grade'] = df['G1'].astype(int) + df['G2'].astype(int) + df['G3'].astype(int)
-
+#print(df)
 
 #Step-3
 df = df.drop(['G1','G2','G3'],axis = 1)
+#print(df)
 
 
 #Step-4
@@ -41,15 +43,13 @@ df['nursery'] = df['nursery'].apply({'"No"':0,'"Yes"':1}.get)
 df['higher'] = df['higher'].apply({'"No"':0,'"Yes"':1}.get)
 df['internet'] = df['internet'].apply({'"No"':0,'"Yes"':1}.get)
 df['romantic'] = df['romantic'].apply({'"No"':0,'"Yes"':1}.get)
-
-
 #print(df.head())
+#print(df)
 
 
 #Step-5 and 6
 
 #using seaborn
-import seaborn as sns
 ax = sns.boxplot(x='studytime',y='final_grade', data = df).set_title("Box_plot along with scatter points")
 ax = sns.swarmplot(x='studytime' ,y='final_grade', data = df, color = "grey")
 
