@@ -5,6 +5,7 @@ import numpy as np
 
 #Step-1
 df_csv = pd.read_csv("student-math.csv")
+#The csv file provided to me, had all the data in one column with each data separated by ";"
 col = df_csv.columns.tolist()
 cols = col[0].split(";")
 df_csv.columns=["data"]
