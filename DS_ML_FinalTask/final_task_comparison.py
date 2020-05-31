@@ -98,12 +98,11 @@ print("RandomForestRegressor model:\n-------------------------------")
 print("Train score:",model_random.score(x_train,y_train))
 print("Test score:",model_random.score(x_test,y_test))
 print("Predict score:",model_random.score(x_test,y_predr))
-plt.scatter(y_test,y_predr, color ="red")
+fig1 = plt.scatter(y_test,y_predr, color ="red")
 plt.xlabel("y_test")
 plt.ylabel("y_pred")
 plt.title("y_test vs y_pred(RandomForestRegressor)")
 plt.show()
-plt.savefig("RandomForestRegressor_plot.png")
 
 print("DecisionTreeRegressor model:\n-------------------------------")
 print("Train score:",model_decision.score(x_train,y_train))
@@ -114,7 +113,7 @@ plt.xlabel("y_test")
 plt.ylabel("y_pred")
 plt.title("y_test vs y_pred(DecisionTreeRegressor)")
 plt.show()
-plt.savefig("DecisionTreeRegressor_plot.png")
+
 
 
 #plotting the scatterplot
