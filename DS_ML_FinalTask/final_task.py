@@ -66,14 +66,17 @@ model = linear_model.LinearRegression()
 model.fit(x_train, y_train)
 
 #predicting and calculating the accuracy score
-print("Test score:",model.score(x_test,y_test))
 y_pred = model.predict(x_test)
+print("Linear regression model:\n-------------------------------")
+print("Train score:",model_linear.score(x_train,y_train))
+print("Test score:",model_linear.score(x_test,y_test))
+print("Predict score:",model_linear.score(x_test,y_pred))
 
 #plotting the scatterplot
-plt.scatter(y_test,y_pred)
+plt.scatter(y_test,y_pred,color="red")
 plt.xlabel("y_test")
 plt.ylabel("y_pred")
-plt.title("y_test vs y_pred")
+plt.title("y_test vs y_pred(Linear Regression")
 plt.savefig("linear_regression_plot.png")
 
 
