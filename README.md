@@ -47,7 +47,7 @@ Atlast, I used three different regression models namely, Linear Regression model
 		Predict score: 1.0
 	
 Plot:
-![](DS_ML_FinalTask_1/linear_regression_plot.png)
+![](DS_ML_FinalTask/linear_regression_plot.png)
 	
 2. RandomForestRegressor model:
 
