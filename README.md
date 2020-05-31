@@ -47,6 +47,7 @@ Accuracy Scores:
 	Predict score: 1.0
 	
 Plot:
+
 ![](DS_ML_FinalTask/linear_regression_plot.png)
 	
 2. RandomForestRegressor model:
