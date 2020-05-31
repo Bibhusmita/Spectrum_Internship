@@ -41,10 +41,10 @@ Atlast, I used three different regression models namely, Linear Regression model
 # Results:
 1. Linear regression model:
 
-	#Accuracy Scores:
-		Train score: 0.9759271752511826
-		Test score: 0.9615725887131311
-		Predict score: 1.0
+Accuracy Scores:
+	Train score: 0.9759271752511826
+	Test score: 0.9615725887131311
+	Predict score: 1.0
 	
 Plot:
 ![](DS_ML_FinalTask/linear_regression_plot.png)
@@ -57,6 +57,7 @@ Accuracy scores:
 	Predict score: 1.0
 
 Plot:
+![](DS_ML_FinalTask/RandomForestRegressor_plot.png)
 	
 	
 3. DecisionTreeRegressor model:
@@ -67,15 +68,25 @@ Accuracy scores:
 	Predict score: 1.0
 
 Plot:
+![](DS_ML_FinalTask/DecisionTreeRegressor_plot.png)
 	
 # Comparison between the three models:
+![](DS_ML_FinalTask/Comparision_plot.png)
+
+
+
+
+# Future Development:
+1. A web-application can be developed to predict students grades.
+2. A database can be included.
+3. Can be applied on the students data on city-wise, district-wise and other higher levels.
+4. Track the average results so as to help and guide those in need.
 	
 	
+Submitted By:
+Bibhusmita Patro
 
-
-
-*Final Summary of the OLS backward elimination:
-
+	
 
 	
 	
