@@ -21,8 +21,8 @@ df.isnull().sum()
 #creating final_grade column
 df["final_grade"] = df["G1"] + df["G2"] + df["G3"]
 
-#Label encoding
 
+#Label encoding
 encode = LabelEncoder()
 
 df["school"] =  encode.fit_transform(df["school"])
@@ -66,15 +66,18 @@ model = linear_model.LinearRegression()
 model.fit(x_train, y_train)
 
 #predicting and calculating the accuracy score
-model.score(x_test,y_test)
+print("Test score:",model.score(x_test,y_test))
 y_pred = model.predict(x_test)
 
 #plotting the scatterplot
 plt.scatter(y_test,y_pred)
-#ax.plot(x_test, y_pred, kind ="scatter")
+plt.xlabel("y_test")
+plt.ylabel("y_pred")
+plt.title("y_test vs y_pred")
+plt.savefig("linear_regression_plot.png")
+
 
 #Building Optimal model using backward elimination model 
-
 import statsmodels.api as sm
 
 def backwardElimination(x,sl):
@@ -86,8 +89,7 @@ def backwardElimination(x,sl):
             for j in range(0,colnums-i):
                 if regressor_model.pvalues[j].astype(float) == maxcol :
                     x = np.delete(x,j,1)
-    print(regressor_model.summary())
-            
+    print(regressor_model.summary())        
                     
                 
         
@@ -96,5 +98,3 @@ def backwardElimination(x,sl):
 x_opt =x [:,[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,21,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]]
 sl = 0.05
 backwardElimination(x_opt,sl)
-
-print(len(x[0]))
