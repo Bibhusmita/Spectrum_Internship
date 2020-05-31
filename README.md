@@ -41,12 +41,13 @@ Atlast, I used three different regression models namely, Linear Regression model
 # Results:
 1. Linear regression model:
 
-Accuracy Scores:
-	Train score: 0.9759271752511826
-	Test score: 0.9615725887131311
-	Predict score: 1.0
+	#Accuracy Scores:
+		Train score: 0.9759271752511826
+		Test score: 0.9615725887131311
+		Predict score: 1.0
 	
 Plot:
+![](DS_ML_FinalTask_1/linear_regression_plot.png)
 	
 2. RandomForestRegressor model:
 
