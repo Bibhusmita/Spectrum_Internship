@@ -43,43 +43,63 @@ Atlast, I used three different regression models namely, Linear Regression model
 
 ##### Results:
 **1. Linear regression model:**
+
+###### Result:
 ```
 Accuracy Scores:
 	Train score: 0.9759271752511826
 	Test score: 0.9615725887131311
 	Predict score: 1.0
 ```	
-**Plot:**
+###### Plot:
 
-![](DS_ML_FinalTask/linear_regression_plot.png)
+![](DS_ML_FinalTask/plots/linear_regression_plot.png)
 	
 **2. RandomForestRegressor model:**
+
+###### Result:
 ```
 Accuracy scores:
 	Train score: 0.9959036080691345
 	Test score: 0.9716934923691417
 	Predict score: 1.0
 ```
-**Plot:**
+###### Plot:
 
-![](DS_ML_FinalTask/RandomForestRegressor_plot.png)
+![](DS_ML_FinalTask/plots/RandomForestRegressor_plot.png)
 	
 	
 **3. DecisionTreeRegressor model:**
+
+###### Result:
 ```
 Accuracy scores:
 	Train score: 1.0
 	Test score: 0.9455756658990981
 	Predict score: 1.0
 ```
-**Plot:**
+###### Plot:
 
-![](DS_ML_FinalTask/DecisionTreeRegressor_plot.png)
+![](DS_ML_FinalTask/plots/DecisionTreeRegressor_plot.png)
 	
 ###### Comparison between the three models:
-![](DS_ML_FinalTask/Comparision_plot.png)
+![](DS_ML_FinalTask/plots/Comparision_plot.png)
 
+##### Data Visualisation:
+###### Plot for absences vs final_grade:
+![](DS_ML_FinalTask/plots/absences-vs-final_grade.png)
 
+###### Plot for sex vs absences:
+![](DS_ML_FinalTask/plots/sex-vs-absences.png)
+
+###### Plot for studytime vs final_grade:
+![](DS_ML_FinalTask/plots/studytime-vs-final_grade.png)
+
+###### Plot for G1 vs final_grade:
+![](DS_ML_FinalTask/plots/G1-vs-final_grade.png)
+
+###### Plot for G2 vs final_grade:
+![](DS_ML_FinalTask/plots/G2-vs-final_grade.png)
 
 
 ##### Future Development:
@@ -87,7 +107,7 @@ Accuracy scores:
 2. A database can be included.
 3. Can be applied on the students data on city-wise, district-wise and other higher levels.
 4. Track the average results so as to help and guide those in need.
-	
+5. This can also be used to analyse the growth among different genders which can then help us guide them to more success equally.
 	
 Submitted By:
 Bibhusmita Patro
