@@ -101,6 +101,10 @@ Accuracy scores:
 ###### Plot for G2 vs final_grade:
 ![](DS_ML_FinalTask/plots/G2-vs-final_grade.png)
 
+##### Final summary after optimization of the linear regression model using Backward elimination:
+![](DS_ML_FinalTask/Summary-final_backward-elimination.PNG)
+
+
 
 ##### Future Development:
 1. A web-application can be developed to predict students grades.
@@ -109,8 +113,9 @@ Accuracy scores:
 4. Track the average results so as to help and guide those in need.
 5. This can also be used to analyse the growth among different genders which can then help us guide them to more success equally.
 	
-Submitted By:
-Bibhusmita Patro
+
+**Submitted By:**
+**Bibhusmita Patro**
 
 	
 
