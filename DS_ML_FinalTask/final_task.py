@@ -21,6 +21,8 @@ df.isnull().sum()
 #creating final_grade column
 df["final_grade"] = df["G1"] + df["G2"] + df["G3"]
 
+dfg = df.copy()
+
 
 #Label encoding
 encode = LabelEncoder()
@@ -76,8 +78,9 @@ print("Predict score:",model_linear.score(x_test,y_pred))
 plt.scatter(y_test,y_pred,color="red")
 plt.xlabel("y_test")
 plt.ylabel("y_pred")
-plt.title("y_test vs y_pred(Linear Regression")
-plt.savefig("linear_regression_plot.png")
+plt.title("y_test vs y_pred(Linear Regression)")
+plt.show()
+
 
 
 #Building Optimal model using backward elimination model 
@@ -101,3 +104,13 @@ def backwardElimination(x,sl):
 x_opt =x [:,[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,21,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]]
 sl = 0.05
 backwardElimination(x_opt,sl)
+
+#Data visualisation using seaborn
+
+import seaborn as sns
+sns.catplot(x='absences', y='final_grade', data = dfg, kind = 'bar' ,height = 3, aspect =2)
+sns.catplot(y= 'absences',x="sex", data=dfg, kind='violin')
+sns.swarmplot(x='sex', y='absences', color='k',size=3, data = dfg)
+sns.catplot(x='studytime', y='final_grade', hue='sex', kind='violin',data =dfg)
+sns.catplot(x='G1', y= 'final_grade', hue='sex',kind='bar', data=dfg)
+sns.catplot(x='G2', y= 'final_grade', hue='sex',kind='bar', data=dfg)
