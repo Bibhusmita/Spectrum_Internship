@@ -3,11 +3,10 @@
 ## Final Report
 
 ##### About the Internship
-This online summer internship was conducted by Spectrum Club, College Of Engineering and Technology, Bhubaneswar for a period of 1 month in May ending on 31st May,2020.
-The whole internship was divided into 3 tasks and one pretask concluding with a Student Grade Prediction model.
+This online summer internship was conducted by Spectrum Club, College Of Engineering and Technology, Bhubaneswar. The whole internship was divided into 3 tasks and one pretask concluding with a Student Grade Prediction model.
 
 ##### About the Project:
-In this internship, I have built a Student Grade Prediction Model based on various machine learning techniques on the student's grade dataset given by the organiser.
+In this internship, I have built a Student Grade Prediction Model based on various machine learning techniques on the student's grade dataset provided by the organisers.
 
 ##### Technologies used:
  
@@ -62,6 +61,7 @@ Accuracy scores:
 	Predict score: 1.0
 ```
 **Plot:**
+
 ![](DS_ML_FinalTask/RandomForestRegressor_plot.png)
 	
 	
@@ -73,6 +73,7 @@ Accuracy scores:
 	Predict score: 1.0
 ```
 **Plot:**
+
 ![](DS_ML_FinalTask/DecisionTreeRegressor_plot.png)
 	
 ###### Comparison between the three models:
