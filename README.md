@@ -55,33 +55,33 @@ Accuracy Scores:
 ![](DS_ML_FinalTask/linear_regression_plot.png)
 	
 **2. RandomForestRegressor model:**
-
+```
 Accuracy scores:
 	Train score: 0.9959036080691345
 	Test score: 0.9716934923691417
 	Predict score: 1.0
-
-Plot:
+```
+**Plot:**
 ![](DS_ML_FinalTask/RandomForestRegressor_plot.png)
 	
 	
-3. DecisionTreeRegressor model:
-
+**3. DecisionTreeRegressor model:**
+```
 Accuracy scores:
 	Train score: 1.0
 	Test score: 0.9455756658990981
 	Predict score: 1.0
-
-Plot:
+```
+**Plot:**
 ![](DS_ML_FinalTask/DecisionTreeRegressor_plot.png)
 	
-# Comparison between the three models:
+###### Comparison between the three models:
 ![](DS_ML_FinalTask/Comparision_plot.png)
 
 
 
 
-# Future Development:
+##### Future Development:
 1. A web-application can be developed to predict students grades.
 2. A database can be included.
 3. Can be applied on the students data on city-wise, district-wise and other higher levels.
